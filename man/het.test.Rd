@@ -1,5 +1,6 @@
-\name{het.htest-package}
-\alias{het.htest-package}
+\name{het.test-package}
+\alias{het.test-package}
+\alias{het.test}
 \docType{package}
 \title{
 Package for White's Test for Heteroskedasticity
@@ -27,7 +28,7 @@ Maintainer: Sebastian Andersson <sebastian.andersson@statistik.uu.se>
 Doornik, J. A. (1996). Testing vector error autocorrelation and heteroscedasticity. unpublished paper, Nuffield College.
 }
 
-\keyword{ residuals, heteroskedasticity, VAR }
+\keyword{htest}
 \examples{
 library(vars)
 dataset <- data.frame(x=rnorm(100), y=rnorm(100))

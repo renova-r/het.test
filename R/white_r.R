@@ -48,19 +48,19 @@ setMethod("show", "whitetest", function(object) {
 # Create the function for the test
 whites.htest <- function(var.model) {
   
-  if (class(var.model) != "varest") {
+  if (class(var.model)[1L] != "varest") {
     stop("The VAR model must be of class varest.")
   }
   
-  if ("exogen" %in% names(var.model$call) && class(var.model$call$exogen) != "NULL") {
+  if ("exogen" %in% names(var.model$call) && class(var.model$call$exogen)[1L] != "NULL") {
     stop("The script does not yet support VAR models with exogenous variables.")
   }
   
-  if ("season" %in% names(var.model$call) && class(var.model$call$season) != "NULL") {
+  if ("season" %in% names(var.model$call) && class(var.model$call$season)[1L] != "NULL") {
     stop("The script does not yet support VAR models with seasonal variables.")
   }
   
-  if (class(var.model$restrictions) != "NULL") {
+  if (class(var.model$restrictions)[1L] != "NULL") {
     stop("The script does not yet support VAR models with restrictions.")
   }
   

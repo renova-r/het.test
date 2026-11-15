@@ -1,7 +1,11 @@
+importFrom("methods", "new", "setClass", "setMethod", "representation", "show")
+importFrom("stats", "lm", "pchisq", "residuals")
+importFrom("vars", "VAR")
+
 exportPattern("^[[:alpha:]]+")
 exportMethods(
-    "show" 
+    "show"
 )
 exportClasses(
-    "whitetest" 
+    "whitetest"
 )
